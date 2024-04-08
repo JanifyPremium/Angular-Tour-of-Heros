@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {Hero } from '../hero';
 
 @Component({
   selector: 'app-root',
