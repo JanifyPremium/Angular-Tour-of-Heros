@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Hero} from '..\hero.ts';
 
 @Component({
   selector: 'app-heroes',
@@ -8,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './heroes.component.css'
 })
 export class HeroesComponent {
-  hero = 'Viper';
+  hero: 'Viper'{
+    id: 1,
+    name: 'Viper'
+  };
 }

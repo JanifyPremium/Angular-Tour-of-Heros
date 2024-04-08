@@ -1,13 +1,12 @@
 <style>
   :host{
   /*Project Colors, Gradients and Font */
-  --asphalt: oklch(15.77% 0.02 45.56);
-    --coffee-bean: oklch(21.76% 0.036 39.98);
-    --cedar: oklch(27.75% 0.051 40.68);
-    --brown-derby: oklch(33.07% 0.065 40.96);
-    --mule-fawn: oklch(48.01% 0.102 40.01);
-    --medium-carmine: oklch(53.03% 0.115 40.74);
-    --brown-rust: oklch(57.64% 0.126 40.36);
+  	--asphalt: oklch(15.77% 0.02 45.56);
+    --radical-red: oklch(66.37% 0.219 20.75);
+    --mojo: oklch(54.19% 0.168 20.23);
+    --cocoa-bean: oklch(32.37% 0.075 9.82);
+	--bridal-heath: oklch(98.95% 0.009 78.28);
+	--black: oklch(0% 0 0);
 
     --gray-900: oklch(19.37% 0.006 300.98);
     --gray-700: oklch(36.98% 0.014 302.71);
@@ -16,15 +15,15 @@
     --asphalt-to-coffee-bean-to-cedar-vertical-gradient: linear-gradient(
       180deg,
       var(--asphalt) 0%,
-      var(--coffee-bean) 50%,
-      var(--cedar) 100%
+      var(--cocoa-bean) 50%,
+      var(--mojo) 100%
     );
 
     --asphalt-to-coffee-bean-to-cedar-horizontal-gradient: linear-gradient(
       90deg,
       var(--asphalt) 0%,
-      var(--coffee-bean) 50%,
-      var(--cedar) 100%
+      var(--cocoa-bean) 50%,
+      var(--mojo) 100%
     );
 
     --pill-accent: var(--brown-rust);
@@ -37,8 +36,8 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+
   main {
-    width: 100%;
     min-height: 100%;
     display: flex;
     justify-content: center;
@@ -60,9 +59,9 @@
 <main class="main">
   <div class="Mainbody">
     <div class="content">
-      <h1>{{ title }}/h1> 
-		<app-heroes></app-heroes>
-     <!--input type="button" name="Dashboard" id="Dashboard">
+      <h1>{{ title }}</h1> 
+  <app-heroes></app-heroes>
+    	<!--	 input type="button" name="Dashboard" id="Dashboard">
      <input type="button" name="heroesbutton" id="heroesbutton"> -->
 
 
