@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { Hero } from '../hero';
 
 @Component({
-  standalone: true,
   selector: 'app-hero-detail',
+  standalone: true,
   templateUrl: './hero-detail.component.html',
   styleUrls: ['./hero-detail.component.css'],
   imports: [
