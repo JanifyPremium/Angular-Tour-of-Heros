@@ -5,10 +5,10 @@ import { NgFor, NgIf, UpperCasePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 @Component({
+  standalone: true, 
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css'],
-  standalone: true, 
   imports: [
     FormsModule,
     NgFor,
