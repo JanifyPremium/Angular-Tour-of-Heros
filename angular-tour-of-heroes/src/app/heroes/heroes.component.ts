@@ -10,10 +10,10 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./heroes.component.css'],
   standalone: true, 
   imports: [
+    FormsModule,
     NgFor,
     NgIf,
     UpperCasePipe,
-    FormsModule,
   ],
 })
 export class HeroesComponent {
@@ -22,4 +22,8 @@ export class HeroesComponent {
     name: 'Viper'
   };
   heroes = HEROES;
+  selectedHero?: Hero;
+  onSelect(hero:Hero) : void{ 
+    this.selectedHero = hero;
+}
 }
