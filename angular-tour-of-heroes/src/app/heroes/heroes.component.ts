@@ -25,4 +25,12 @@ export class HeroesComponent {
   };
   heroes : Hero [] = [];
   constructor(private heroService: HeroService) {}
+
+  getHeroes(): void{
+    this.heroes = this.heroService.getHeroes();
+  }
+  
+  ngOnInit(): void{
+    this.getHeroes();
+  }
 }
