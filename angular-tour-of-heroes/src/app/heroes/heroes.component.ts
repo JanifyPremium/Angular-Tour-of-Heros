@@ -21,7 +21,7 @@ import { HeroDetailComponent } from "../hero-detail/hero-detail.component";
 export class HeroesComponent {
   hero: Hero = {
     id: 1,
-    name: 'Viper'
+    name: 'Brimstone'
   };
   heroes = HEROES;
   selectedHero?: Hero;
