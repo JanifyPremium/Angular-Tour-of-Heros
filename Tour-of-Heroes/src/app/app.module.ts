@@ -10,11 +10,11 @@ import { MessagesComponent } from './messages/messages.component';
   declarations: [
     AppComponent,
     HeroesComponent,
-    HeroDetailComponent,
     MessagesComponent
   ],
   imports: [
     BrowserModule,
+    HeroDetailComponent,
     FormsModule
   ],
   providers: [
