@@ -1,12 +1,13 @@
 <style>
-  :host{
+
+:host{
   /*Project Colors, Gradients and Font */
-  	--asphalt: oklch(15.77% 0.02 45.56);
+    --asphalt: oklch(15.77% 0.02 45.56);
     --radical-red: oklch(66.37% 0.219 20.75);
     --mojo: oklch(54.19% 0.168 20.23);
     --cocoa-bean: oklch(32.37% 0.075 9.82);
-	--bridal-heath: oklch(98.95% 0.009 78.28);
-	--black: oklch(0% 0 0);
+    --bridal-heath: oklch(98.95% 0.009 78.28);
+    --black: oklch(0% 0 0);
 
     --gray-900: oklch(19.37% 0.006 300.98);
     --gray-700: oklch(36.98% 0.014 302.71);
@@ -36,32 +37,15 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-
-  main {
-    min-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    box-sizing: inherit;
-    position: relative;
-  }
-
-  .content {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 700px;
-    margin-bottom: 3rem;
-  }
 </style>
 
 <main class="main">
   <h1>{{title}}</h1>
+  <div>
 <nav>
   <a routerLink="/dashboard">Dashboard</a>
   <a routerLink="/heroes">Heroes</a>
 </nav>
+</div>
 <router-outlet></router-outlet>
-<app-messages></app-messages>
 </main>

@@ -11,19 +11,18 @@ import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        DashboardComponent,
-        HeroesComponent,
-        HeroDetailComponent,
-        MessagesComponent
-    ],
-    bootstrap: [AppComponent],
-    imports: [
-        BrowserModule,
-        FormsModule,
-        AppRoutingModule,
-        HeroDetailComponent
-    ]
+  declarations: [
+    AppComponent,
+    HeroesComponent,
+    MessagesComponent,  
+    HeroDetailComponent,
+    DashboardComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule
+  ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
